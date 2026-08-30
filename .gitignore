@@ -1,0 +1,10 @@
+# Secrets and credentials
+.env
+*.env
+
+# Generated audio and transcripts (large / reproducible from lesson sources)
+lessons/**/*.mp3
+
+# OS / editor noise
+Thumbs.db
+.DS_Store
