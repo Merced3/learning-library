@@ -11,21 +11,21 @@ Status: `known` | `edge` | `unknown` | `blocked`. Evidence levels per AGENTS.md.
 
 | strand | status | evidence |
 |---|---|---|
-| Data & state — state machines (why CLOSING exists) | edge | Q1: grasped recovery/resume purpose, missed the crash-window reasoning |
-| Data & state — transactions / atomicity | unknown | Q2: honest "I do not know" |
+| Data & state — state machines (why CLOSING exists) / crash windows | known (applied) | 2026-08-31: named time-gap mechanism, located window at send step, explained why retry fails — all unaided |
+| Data & state — transactions / atomicity | edge | Q2 "I do not know"; 2026-08-31 recall check: failed to recall re-presented definition → edge |
 | Data & state — constraints at the DB boundary (races, enforcement at write) | edge | Q1/Q3: gave durability answer (true, wrong layer); missed race-condition enforcement |
 | Failure & reliability — transient vs permanent failure classification | known | R2-Q3: derived retry-only-what-time-can-fix policy unaided |
 | Failure & reliability — unknown process state after timeout, reset-to-known-state | edge | R2-Q1: grasped session-integrity risk, missed protocol desync/unknown-state reasoning |
-| Failure & reliability — backoff, thundering herd, tight-loop costs | unknown | R2-Q2: honest miss |
+| Failure & reliability — backoff, thundering herd, tight-loop costs | edge | R2-Q2 "I don't know"; 2026-08-31 recall: confused with fail-fast → edge |
 | Failure & reliability — idempotency, delivery semantics, supervision | unprobed | |
 | Interfaces & boundaries — decoupling via protocol/ports | known | R3-Q2: named decoupling + swap-channel benefit unaided |
 | Interfaces & boundaries — layer separation (policy vs mechanism) | edge | R3-Q1: answered active-conversation rule instead of reusability/coupling concern |
 | Correctness & testing — what tests buy (regression detection not proof; AI-output authorization) | edge | R4-Q1: original AI-authorization frame (valuable), muddy on regression-vs-correctness |
-| Correctness & testing — mock theater / assumption reflection | edge | R4-Q2: "infrastructure theater" instinct, missed mocks-reflect-own-assumptions mechanism |
+| Correctness & testing — mock theater / assumption reflection | edge | R4-Q2 "infrastructure theater" instinct; 2026-08-31 recall: could not recall mechanism → edge |
 | Correctness & testing — fake the nondeterministic, keep real semantics | edge | R4-Q3: data-isolation axis correct (temp real SQLite ≠ live DB); determinism-vs-semantics axis unaddressed |
 | Scale & performance — fail-fast vs queueing, UX of waiting | edge | R3-Q3: complexity-avoidance answer, missed invisible-hang UX concern |
 | Scale & performance — queues, backpressure, concurrency models | unprobed | |
-| Security — least privilege / blast radius | edge | R5-Q1: insurance analogy (bounded cost of bad day) correct shape; missed the name and compromise/bug vectors |
+| Security — least privilege / blast radius | edge | R5-Q1 insurance analogy correct shape; 2026-08-31 recall: could not recall re-presented principle → edge |
 | Process — git, failed-experiment preservation | known | R5-Q2: stable main + don't-repeat-the-lesson, unaided |
 | Data modeling & schema evolution — old-shape migration fixtures | known | R5-Q3: deployed data IS the contract, unaided |
 | Process — rollout/rollback, review discipline | unprobed | (strong prior: lived the scheduler rollback) |
@@ -49,6 +49,7 @@ Status: `known` | `edge` | `unknown` | `blocked`. Evidence levels per AGENTS.md.
 - R5-Q2 [preserve failed experiments] — stability + lesson-preservation, correct → known
 - R5-Q3 [migration fixtures] — deployed-data-is-the-contract, correct → known
 - REGRADE R4-Q3 — learner clarified "fake" meant temp-instance-not-live-DB (correct); strand row updated, status stays edge (determinism axis still unaddressed)
+- 2026-08-31 RECALL CHECK (5 presented-only concepts, ~5 day delay): 0/5 recalled unaided; crash window partial-shape only; atomicity / least privilege / mocks-assumptions gone; thundering herd confused with fail-fast. All five re-presented → edge nodes; see sessions/2026-08-31-node1-crash-windows.md
 
 ## Notes
 

@@ -1,12 +1,12 @@
 # Current State
 
-Last updated: 2026-08-26 (founding session + first loop: probe complete)
+Last updated: 2026-08-31 (deep-dive node 1 taught; first retention check run)
 
 ## What exists
 
 - This documentation seed (6 files) — the spine, thesis, learner model, state, decision log, handoff.
 - `lessons/` + `tools/make_audio.py` — the audio-lesson modality (from earlier work). Proven to generate; **unproven to retain** (see thesis H1).
-- First loop artifacts: `maps/software-development.md` (14 nodes scored: 4 known / 8 edge / 2 unknown) and `sessions/2026-08-26-software-development-probe.md`. Deep-dive plan "State, invariants, and crashes" frozen; teaching not yet started.
+- First loop artifacts: `maps/software-development.md` (14 nodes scored: 4 known / 8 edge / 2 unknown) and `sessions/2026-08-26-software-development-probe.md`. Deep-dive plan "State, invariants, and crashes": **node 1 (crash windows) taught and demonstrated (applied, unaided)**; nodes 2–5 not started. Session log: `sessions/2026-08-31-node1-crash-windows.md`.
 
 ## What has been tried (outside this system)
 
@@ -14,7 +14,7 @@ Last updated: 2026-08-26 (founding session + first loop: probe complete)
 
 ## The next smallest milestone
 
-First loop status: **probe complete, plan frozen, teaching not started.** Next session: teach node 1 (crash windows) of the frozen deep-dive plan, one node at a time with checks; then run the owed recall check (~2026-08-29) on the five presented-only concepts — crash window, atomicity, thundering herd, least privilege, mocks-reflect-assumptions.
+Node 1 (crash windows) is `known` at level `applied` (unaided, 2026-08-31). Next session: teach node 2 (transactions/atomicity) of the frozen deep-dive — the learner already half-arrived at it spontaneously ("crash can't split the write"), so anchor there. Owed recall checks: (1) node 1 crash-window + idempotency-as-result-invariant concepts, ~2026-09-03 (2-3 day delay); (2) the four concepts that failed the 2026-08-31 recall check (atomicity, thundering herd, least privilege, mocks-reflect-assumptions) — re-present briefly when their deep-dive nodes come up (atomicity is node 2), then re-check with delay.
 
 ## Known risks / open decisions
 

@@ -30,6 +30,9 @@ Everything here is a **hypothesis about one specific mind**, to be confirmed or 
 | Loses the goal/thread in long sessions; needs periodic re-anchoring, not just session-start context | observed | first loop, 2026-08-26: forgot the loop's purpose mid-probe |
 | Wants synchronous voice conversation as a modality (walk/sauna: interrupt, ask, debate) | confirmed | stated 2026-08-26; motivated by wanting to interrupt the passive audio lesson mid-listen |
 | Software books go "in one ear and out the other" | confirmed | self-report 2026-08-26; corroborates H1 pattern beyond audio |
+| Retention without retrieval practice is weak — first system measurement: 0/5 presented-only concepts survived 5 days unaided | observed | 2026-08-31 recall check; partial shapes retained (scope of crash window) but mechanisms lost; consistent with H1, n=1 |
+| Self-corrects mid-answer and re-reads the actual question when confused ("wait what am I answering") — then answers the real one well | observed | 2026-08-31 node-1 session; confusion resolved by learner, not teacher |
+| Generalizes taught concepts unprompted when they land (extended crash window → idempotency as result-invariant; inferred atomicity's role before node 2) | observed | 2026-08-31; suggests checks that require prediction (not just recall) fit this mind |
 
 ## Preferences to respect now
 
