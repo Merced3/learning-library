@@ -55,3 +55,23 @@ credentials — flagged inside the notes themselves).
 
 Verdict: keep — structure held; only content-level corrections were needed. First teaching
 loop remains the next milestone.
+
+---
+
+## 2026-08-26 — First manual loop: probe phase complete
+
+Hypothesis: A manual probe → map → plan loop produces usable competency evidence and valid
+teaching targets without any new software.
+
+Intervention: Ran 5 probe rounds (14 nodes) anchored to socratic-partner; wrote
+maps/software-development.md; froze the "State, invariants, and crashes" deep-dive plan;
+learner chose to close the session before teaching node 1 to test the handoff docs.
+
+Evidence: 4 known / 8 edge / 2 unknown. Pattern finding: learner answers "one layer up" —
+grasps what mechanisms do, not why they live at that layer (root gap: invariants and
+enforcement boundaries). Learner lost the session goal mid-probe → recorded in learner.md;
+future sessions should re-anchor periodically. Teacher made one map-editing error (dropped a
+table row) — caught, restored, logged in map notes.
+
+Verdict: inconclusive until node 1 is taught and the ~2026-08-29 recall check runs. The
+handoff test (can a fresh session resume from docs alone?) is the next gate.
