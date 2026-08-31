@@ -75,3 +75,21 @@ table row) — caught, restored, logged in map notes.
 
 Verdict: inconclusive until node 1 is taught and the ~2026-08-29 recall check runs. The
 handoff test (can a fresh session resume from docs alone?) is the next gate.
+
+---
+
+## 2026-08-29 — Session closeout: conventions, model label, format question, new session policy
+
+Hypothesis: Handoffs stay robust when conventions (file form, session policy, model labels)
+are recorded instead of discovered per failure.
+
+Intervention: Fixed mislabeled Model: in session file (Claude vs Kimi mixed). Recorded a
+paragraph-storage convention in docs/session-handoff.md (unwrapped lines for exact-match).
+Added "markdown storage sufficiency" as an open decision in current-state.md — to be
+answered after handoff-test evidence, not by default.
+
+Evidence: Live session showed three long-line vs wrapped-paragraph edit failures before a
+read/correction; the user asked if markdown is professional for evolving knowledge; model
+used was mixed (Claude one round, Kimi otherwise).
+
+Verdict: keep. Next session uses the updated handoff and convention explicitly.

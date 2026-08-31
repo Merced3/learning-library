@@ -24,12 +24,20 @@ Today's goal: <one sentence>
 
 ## Closing a session — the agent must do this
 
-1. Update `docs/current-state.md`: what was taught, what was demonstrated (unaided vs. coached), what's next.
+1. Update `docs/current-state.md`: what was taught, what was demonstrated (unaided vs. coached), what's next, and which model(s) were used (files must not mislabel the model).
 2. Update `docs/learner.md` if anything true was learned about this mind — with status (`confirmed` / `observed` / `hypothesis`) and evidence.
 3. Append any experiments or approach changes to `docs/decision-log.md`.
 4. If any taught claim is time-sensitive, note its `current as of` date.
 5. Record the next delayed-recall check that is owed, and when.
 6. Leave the folder resumable by a different model with zero access to this conversation.
+
+## Conventions
+
+- Paragraphs in `maps/`, `sessions/`, and `docs/current-state.md` are stored as single
+  unwrapped lines — robust for the exact-match scripted edits agents use. Wrapped prose is
+  human-nicer; check file form before scripted edits either way.
+- The handoff prompt omits a `Model:` line on purpose; fill it at close with the actual
+  model(s).
 
 ## Drift test
 

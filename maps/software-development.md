@@ -56,5 +56,11 @@ Status: `known` | `edge` | `unknown` | `blocked`. Evidence levels per AGENTS.md.
   signal; do not over-question to extract admissions he volunteers.
 - Learner assumes questions are scoped to the current project unless told otherwise —
   signpost scope explicitly ("thinking beyond this project...") when a question goes general.
+- **File convention**: paragraphs stored as single unwrapped lines make exact-match scripted
+  edits robust; wrapping is nicer for human eyes. Either is fine for AI context-reading.
+  New files should default to unwrapped paragraphs (as current-state.md already does);
+  existing wrapped files stay until deliberately rewritten. Record the choice once here.
 - Teacher error log: R3 map edit accidentally dropped the Correctness & testing row
   (overbroad replacement); caught and restored at R4. Verify table integrity after edits.
+  A second recurring error: guessing wrapped-paragraph text when the file stores one line
+  per paragraph — prefer `read`/`grep` before scripted edits on non-code files.

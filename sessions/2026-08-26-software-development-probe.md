@@ -1,7 +1,7 @@
 # Session — Software Development, probe + plan (first manual loop)
 
 Date: 2026-08-26
-Model: Claude (via pi)
+Model: mixed (Claude for audit round; moonshotai/kimi-k3 otherwise) — update at session close
 Goal: First manual teaching loop — validate the loop, produce first learner evidence, and map the learner across software-development strands.
 
 ## What happened
