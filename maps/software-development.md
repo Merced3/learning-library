@@ -12,12 +12,12 @@ Status: `known` | `edge` | `unknown` | `blocked`. Evidence levels per AGENTS.md.
 | strand | status | evidence |
 |---|---|---|
 | Data & state — state machines (why CLOSING exists) / crash windows | known (applied) | 2026-08-31: named time-gap mechanism, located window at send step, explained why retry fails — all unaided |
-| Data & state — transactions / atomicity | edge | Q2 "I do not know"; 2026-08-31 recall check: failed to recall re-presented definition → edge |
+| Data & state — transactions / atomicity | known (explained) | 2026-09-01: explained all-or-nothing/rollback + "unit, harmless not smaller" framing after lock-in (initial answer correct but self-flagged as guess); boundary selection correct unaided (money writes in, Discord out); placement before/after point-of-no-return needed coaching; final ordering check mixed → explained, applied not yet clean |
 | Data & state — constraints at the DB boundary (races, enforcement at write) | edge | Q1/Q3: gave durability answer (true, wrong layer); missed race-condition enforcement |
 | Failure & reliability — transient vs permanent failure classification | known | R2-Q3: derived retry-only-what-time-can-fix policy unaided |
 | Failure & reliability — unknown process state after timeout, reset-to-known-state | edge | R2-Q1: grasped session-integrity risk, missed protocol desync/unknown-state reasoning |
 | Failure & reliability — backoff, thundering herd, tight-loop costs | edge | R2-Q2 "I don't know"; 2026-08-31 recall: confused with fail-fast → edge |
-| Failure & reliability — idempotency, delivery semantics, supervision | unprobed | |
+| Failure & reliability — idempotency, delivery semantics, supervision | edge | 2026-09-01: idempotency re-presented inside node 2 after failed 1-day unaided recall (learner asked what it means, then re-derived instantly); delivery semantics surfaced in ordering check (duplication-vs-loss at Discord send, recognized via node 1) |
 | Interfaces & boundaries — decoupling via protocol/ports | known | R3-Q2: named decoupling + swap-channel benefit unaided |
 | Interfaces & boundaries — layer separation (policy vs mechanism) | edge | R3-Q1: answered active-conversation rule instead of reusability/coupling concern |
 | Correctness & testing — what tests buy (regression detection not proof; AI-output authorization) | edge | R4-Q1: original AI-authorization frame (valuable), muddy on regression-vs-correctness |
@@ -50,6 +50,7 @@ Status: `known` | `edge` | `unknown` | `blocked`. Evidence levels per AGENTS.md.
 - R5-Q3 [migration fixtures] — deployed-data-is-the-contract, correct → known
 - REGRADE R4-Q3 — learner clarified "fake" meant temp-instance-not-live-DB (correct); strand row updated, status stays edge (determinism axis still unaddressed)
 - 2026-08-31 RECALL CHECK (5 presented-only concepts, ~5 day delay): 0/5 recalled unaided; crash window partial-shape only; atomicity / least privilege / mocks-assumptions gone; thundering herd confused with fail-fast. All five re-presented → edge nodes; see sessions/2026-08-31-node1-crash-windows.md
+- 2026-09-01 NODE 2 (transactions/atomicity) taught; see sessions/2026-09-01-node2-transactions.md. Lock-in 1 (rollback shows neither write) correct but guess-flagged, mechanism then explained unaided; credits design: boundary correct, placement before/after unresolved ("I really don't know") → taught charge-before-point-of-no-return + keyed retry; ordering check: archive gap mislabeled unrecoverable (it is retry-safe), Discord-send gap correctly flagged unknown-delivery. Idempotency failed 1-day unaided recall. Repo-verified: real socratic-partner code already uses transaction boundaries + CLOSING/reopen reset + guarded writes (`WHERE status='OPEN'`). Same-day applied re-test: damage modes per boundary correct (applied-level), envelope scope wrong, retry walk double-charged; proof chain not unaided before fatigue → grade stays `explained`; fresh proof re-run owed next session.
 
 ## Notes
 

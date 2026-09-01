@@ -1,12 +1,12 @@
 # Current State
 
-Last updated: 2026-08-31 (deep-dive node 1 taught; first retention check run)
+Last updated: 2026-09-01 (deep-dive node 2 taught, graded known (explained); lessons grounded against real socratic-partner code).
 
 ## What exists
 
 - This documentation seed (6 files) — the spine, thesis, learner model, state, decision log, handoff.
 - `lessons/` + `tools/make_audio.py` — the audio-lesson modality (from earlier work). Proven to generate; **unproven to retain** (see thesis H1).
-- First loop artifacts: `maps/software-development.md` (14 nodes scored: 4 known / 8 edge / 2 unknown) and `sessions/2026-08-26-software-development-probe.md`. Deep-dive plan "State, invariants, and crashes": **node 1 (crash windows) taught and demonstrated (applied, unaided)**; nodes 2–5 not started. Session log: `sessions/2026-08-31-node1-crash-windows.md`.
+- First loop artifacts: `maps/software-development.md` (14 nodes scored: 4 known / 8 edge / 2 unknown) and `sessions/2026-08-26-software-development-probe.md`. Deep-dive plan "State, invariants, and crashes": node 1 (crash windows) `known` at `applied` (unaided, 2026-08-31); node 2 (transactions/atomicity) `known` at `explained` (2026-09-01, application still mixed); nodes 3–5 (races/write-boundary → state machines → idempotency) not started. Session logs: `sessions/2026-08-31-node1-crash-windows.md`, `sessions/2026-09-01-node2-transactions.md`.
 
 ## What has been tried (outside this system)
 
@@ -14,7 +14,7 @@ Last updated: 2026-08-31 (deep-dive node 1 taught; first retention check run)
 
 ## The next smallest milestone
 
-Node 1 (crash windows) is `known` at level `applied` (unaided, 2026-08-31). Next session: teach node 2 (transactions/atomicity) of the frozen deep-dive — the learner already half-arrived at it spontaneously ("crash can't split the write"), so anchor there. Owed recall checks: (1) node 1 crash-window + idempotency-as-result-invariant concepts, ~2026-09-03 (2-3 day delay); (2) the four concepts that failed the 2026-08-31 recall check (atomicity, thundering herd, least privilege, mocks-reflect-assumptions) — re-present briefly when their deep-dive nodes come up (atomicity is node 2), then re-check with delay.
+Node 2 (transactions/atomicity) is `known` at level `explained` (2026-09-01; applied re-test same day surfaced real gaps — envelope scope, skip-check, proof chain — corrected but proof question not answered unaided before fatigue; grade stays `explained`): mechanism explained in own words, boundary selection correct unaided (money writes in, Discord out), damage-mode naming per boundary correct (applied-level). Next session: quick fresh re-run of the proof question (record exists → balance was decremented, because atomicity makes record+subtraction inseparable), then teach node 3 (races / write-boundary enforcement — the learner's Q1/Q3 probe gap) of the frozen deep-dive. Owed recall checks, all ~2026-09-03: (1) node 1 crash-window concept; (2) idempotency-as-result-invariant (failed a 1-day unaided recall on 2026-09-01 — asked what it means, re-derived instantly on re-presentation); (3) node 2 atomicity/rollback + charge-before-point-of-no-return. Still-failed concepts from 2026-08-31 (thundering herd, least privilege, mocks-reflect-assumptions) re-present when their strands come up, then re-check with delay. Verified grounding (2026-09-01, repo read): socratic-partner already embodies both lessons — `with self._connection()` transaction boundaries (rollback on exception) in store.py; CLOSING + reopen_conversation is the reset/retry mechanism in _complete_conversation; `UPDATE ... WHERE status='OPEN'` guarded write in mark_conversation_closing used as the idempotency pattern example.
 
 ## Known risks / open decisions
 
