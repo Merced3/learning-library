@@ -119,3 +119,15 @@ Evidence: (a) Succeeded at `explained`: lock-in 1 answered correctly but self-fl
 Verdict: keep. Node 2 graded `known (explained)`; applied not yet clean → re-check with delay ~2026-09-03 alongside node-1 recheck. Idempotency failure is n=2 against "self-generation retains" — consistent with H1/H5; re-present idempotency at node 5 with delayed check. Grounding synthetic examples in the real repo is cheap and high-trust; adopt as default whenever a real anchor exists.
 
 OUTCOME (same-day addendum): Learner chose to keep pushing node 2 toward `applied` in the same session. Applied re-test (order the full /done sequence with damage modes, scope the charge transaction, walk the crash-retry): damage-mode naming was correct per boundary (applied-level); envelope scope wrong (put CLOSING + LLM call inside the transaction); retry walk double-charged (missed the keyed skip-check). Corrections: rollback only reaches the DB (outside-world actions can never live in a transaction); each DB step is its own envelope; guarded writes (`WHERE status='OPEN'`) as the real-code idempotency pattern; record-exists → balance-was-decremented proof chain. Final proof question not answered unaided — learner hit a fatigue wall and stopped ("Im pretty spent"). Diagram-first explanation (one boxed 5-step picture) landed where paragraphs hadn't. Grade stays `explained`; fresh proof re-run owed next session before node 3. Fatigue wall + interrupt desire logged in learner.md.
+
+---
+
+## 2026-09-01 — Recall-state taxonomy adopted (learner + Socratic Partner co-authored)
+
+Hypothesis: A failure-to-recall taxonomy with per-state actions keeps the retention gate honest without inflating beyond the loop.
+
+Intervention: Socratic Partner asked what counts as retained without on-demand recall. Answer drafted here, sharpened by the learner (with Socratic Partner's help): unaided recall stays the gate for `known`; failure splits into recallable/re-derivable/recognizable/gone, each routing a distinct agent action. Collapse rule: merge any two states that ever route to the same action.
+
+Evidence: Node-2 idempotency failure (gone at 1 day, re-derived instantly) and the 2026-08-31 0/5 recall check supplied the motivating cases.
+
+Verdict: keep, with the learner's amendment recorded: the system's test is improving the ability to USE knowledge, not name it; the taxonomy is subordinate to the loop.

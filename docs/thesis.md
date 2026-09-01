@@ -44,6 +44,19 @@ Every knowledge claim tracked by this system has two independent states:
 
 The epistemic axis exists because domains rot. "What you know" is only half the record; "whether it's still true" is the other half. Re-checking stale claims is a first-class system job, not an accident.
 
+### Recall states (added 2026-09-01, from the Socratic Partner question)
+
+Socratic Partner asked: *"What counts as retained if the user can't recall on demand?"* Answer: **unaided recall stays the gate for `known` — no exceptions** (the 0/5 evidence is why). But failure-to-recall splits into states that route different actions:
+
+| state | meaning | agent's next step |
+|---|---|---|
+| `recallable` | produces it cold, after delay | extend interval; move on |
+| `re-derivable` | rebuilds it in seconds once prompted | short-interval retrieval rep (scaffold intact, cheap fix) |
+| `recognizable` | knows it when seen, can't produce it | production practice now; no re-teach |
+| `gone` | no usable path | re-teach as new |
+
+Collapse rule (learner-set): if two states ever route to the same action, merge them. The taxonomy serves the loop, never the other way around. The system's real test, per the learner: **does the agent improve the ability to *use* knowledge, not just name it?** Evidence levels track use; these tags only route the next step.
+
 ## Working hypotheses (to be tested, not believed)
 
 1. **H1 — Audio is orientation, not retention.** Long audio lessons build vocabulary and a map, but do not produce durable recall without retrieval practice. *(Basis: learner's own report that audio "wasn't a good way to retain." Evidence: pending.)*
