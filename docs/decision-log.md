@@ -131,3 +131,15 @@ Intervention: Socratic Partner asked what counts as retained without on-demand r
 Evidence: Node-2 idempotency failure (gone at 1 day, re-derived instantly) and the 2026-08-31 0/5 recall check supplied the motivating cases.
 
 Verdict: keep, with the learner's amendment recorded: the system's test is improving the ability to USE knowledge, not name it; the taxonomy is subordinate to the loop.
+
+---
+
+## 2026-09-03 — Node 3 taught (races / write-boundary enforcement) + first re-presentation→delayed-recall success (model: moonshotai/kimi-k3)
+
+Hypothesis: (a) node-2 proof re-run would pass fast when rested (retention datapoint, not re-teach); (b) node 3 could be taught to explained+ in one session grounded in real store.py guarded writes; (c) the 09-01 idempotency re-presentation would show up in delayed recall (~2 days).
+
+Intervention: Proof re-run first (unaided, chat): passed clean — record-exists → charge-applied, atomicity "impossible to lie," retry skip via keyed record. Then node 3 in three step-locked steps: (1) race in naive check-then-act close (learner first answered wrong layer — fail-fast/load — and self-flagged; retaught plain: two moments, time between, collapse into guarded write; DB serializes row writes; loser writes nothing); (2) names: race condition / invariant / enforcement-at-write-boundary, exercised on reopen_conversation's guard (two wrong invariant formulations, then correct); (3) transfer: wallet spend race, guarded write produced in plain words after one correction round. Owed recall checks folded in mid-session: node 1 crash window recalled unaided; idempotency recalled unaided; keyed-usage-record trick re-derivable only (~5-10 min effortful retrieval, order misremembered — Discord-send vs COMPLETE swapped).
+
+Evidence: (a) passed unaided — consistent with "fatigue, not learning" for the 09-01 failure. (b) taught to explained+; transfer achieved with one correction; learner self-reported low confidence at first landing (logged in learner.md). (c) SUCCEEDED — first evidence in-system that re-presentation converts `gone` → `recallable` with delay (contrast: 0/5 and 1-day idempotency failures earlier). Learner asked for lead-with-the-plain-version after blanking on a dense lock-in question; rule adopted: one new word per sentence on first presentation.
+
+Verdict: keep. Node 3 strand edge → known (explained+); clean applied grade deferred until a no-correction transfer. Owed ~2026-09-06: guarded-write-as-race-fix, invariant/enforcement names, keyed trick, node-1 crash window second interval. Next: node 4 (state machines) — learner's own OPEN→CLOSING→COMPLETE rail is the anchor.
