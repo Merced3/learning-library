@@ -143,3 +143,31 @@ Intervention: Proof re-run first (unaided, chat): passed clean — record-exists
 Evidence: (a) passed unaided — consistent with "fatigue, not learning" for the 09-01 failure. (b) taught to explained+; transfer achieved with one correction; learner self-reported low confidence at first landing (logged in learner.md). (c) SUCCEEDED — first evidence in-system that re-presentation converts `gone` → `recallable` with delay (contrast: 0/5 and 1-day idempotency failures earlier). Learner asked for lead-with-the-plain-version after blanking on a dense lock-in question; rule adopted: one new word per sentence on first presentation.
 
 Verdict: keep. Node 3 strand edge → known (explained+); clean applied grade deferred until a no-correction transfer. Owed ~2026-09-06: guarded-write-as-race-fix, invariant/enforcement names, keyed trick, node-1 crash window second interval. Next: node 4 (state machines) — learner's own OPEN→CLOSING→COMPLETE rail is the anchor.
+
+---
+
+## 2026-09-02 — Audio format experiment: dialogue + prediction pauses vs narration
+
+Hypothesis: A two-voice interview lesson with built-in prediction pauses ("answer before
+the tape does") will retain better on delayed recall than the 2026-08-26 narration-style
+lesson, which scored 0/5 at 5 days. Secondary hypothesis (learner-articulated): content
+density beats runtime targets — the learner asked for 30 min (his sauna-session length),
+got 13 min of dense material, and identified his own length request as the same incentive
+error as essay word-count requirements ("length targets incentivize fluff").
+
+Intervention: Built lessons/crash-proofing-dialogue/ — interviewer/guest dialogue (Guy +
+Christopher voices) replaying the learner's ACTUAL wrong answers and self-flags from nodes
+1–3, with 5 prediction pauses. Content: crash windows, transactions, races/guarded writes,
+idempotency recovery story, wallet transfer. Script pauses are retrieval reps if the
+listener answers (even silently); presentation if he lets them wash past.
+
+Engineering note: edge-tts dropped segments mid-render twice (flaky); the lesson's
+make_audio.py now retries with backoff and concatenates raw MP3 frames (no ffmpeg on this
+machine). tools/make_audio.py stays the generic single-voice narrator; the dialogue script
+stays lesson-local until a second dialogue lesson creates the second real need for
+extraction.
+
+Evidence: pending — measured at the ~2026-09-06 recall checks (node 1–3 concepts) vs the
+0/5 narration baseline. Learner must report whether he answered the pauses or let them pass.
+
+Verdict: pending.
