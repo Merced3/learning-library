@@ -59,3 +59,4 @@ Everything here is a **hypothesis about one specific mind**, to be confirmed or 
 - Quiz tolerance: do checks feel useful or annoying?
 - What does "up to speed" feel like to you — being able to *do*, or to *converse about*?
 - Do silent prediction pauses in audio actually trigger retrieval attempts for you, or do you tune them out?
+| Audio re-listening produces recognition fluency, which he initially reads as retention ("it will get better the more I listen") — needs the recall-gate reminder at those moments | observed | 2026-09-03 post-sauna/car report; recalled the node-2 lock-in phrase (prior teaching) but attributed improvement to re-listening |

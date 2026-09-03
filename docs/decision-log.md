@@ -171,3 +171,16 @@ Evidence: pending — measured at the ~2026-09-06 recall checks (node 1–3 conc
 0/5 narration baseline. Learner must report whether he answered the pauses or let them pass.
 
 Verdict: pending.
+
+OUTCOME (2026-09-03, learner report after 2 listens): (a) Spoken "take a second" prompts did
+NOT function as pauses — verbal instructions don't create retrieval space; real dead air
+would. Rendering bug also dropped one of five intended beats (4 in transcript). Fix path:
+ffmpeg + true silence segments. (b) First listen retained nothing and "felt performative"
+(presentation-only, consistent with H1). (c) Second listen (driving): recalled
+"harmless, not smaller" — but that phrase was the node-2 lock-in phrase, so this is
+re-presentation refreshing prior teaching, not audio creating retention. (d) Learner's
+own inference "it gets better the more I listen" is the recognition-fluency trap in his
+own words — logged as a teachable moment, not evidence of retention. (e) Format verdict
+refined: audio = re-presentation layer, not teaching or retention layer. True recall
+verdict still owed at the 2026-09-06 checks; the no-real-pauses flaw means the
+dialogue+pauses hypothesis was NOT cleanly tested this round.
