@@ -50,6 +50,7 @@ Everything here is a **hypothesis about one specific mind**, to be confirmed or 
 | Self-correction habit now operates on NEW material, not just recall: talked himself out of his own Discord-receipt proposal mid-answer, deriving the unweldable-outside-world insight unaided | observed | 2026-09-18 node-5 lock-in ("OHHH wait... nvm my b") |
 | Over-reaches for one-shot complete answers under load, then self-trims when reminded to answer only the question asked | observed | 2026-09-18 node-5 ("Im trying to one shot the whole Entire process") |
 | When a name's meaning is fuzzy, re-anchors on the machinery instead of the word (enforcement → WHERE+rowcount) | observed | 2026-09-18 recall checks; names still need targeted production reps |
+| Irritated by preemptive constraint-framing ("what it's NOT", guardrails) in plans — wants foundational generalization that keeps future paths open; present designs as capabilities, not exclusions | confirmed | stated 2026-09-18 re: rep-runner plan ("Don't try and 'not' build anything... giving us guard rails irritates me") |
 
 ## Preferences to respect now
 
