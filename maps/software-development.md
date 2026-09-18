@@ -10,7 +10,7 @@ Status: `known` | `edge` | `unknown` | `blocked`. Evidence levels per AGENTS.md.
 ## Strands
 
 | strand | status | evidence |
-|---|---|---|
+| --- | --- | --- |
 | Data & state — state machines (why CLOSING exists) / crash windows | known (explained) | 2026-09-16: node 4 taught — middle-state-as-crash-witness lock-in passed applied-level unaided ("OPEN too general to pick the failure mode"); pizza transfer with one sharpening. Crash-window recall fading: recognizable-only at 13 days, 2nd re-presentation 2026-09-16 |
 | Data & state — transactions / atomicity | known (explained) | 2026-09-01: explained all-or-nothing/rollback + "unit, harmless not smaller" framing after lock-in (initial answer correct but self-flagged as guess); boundary selection correct unaided (money writes in, Discord out); placement before/after point-of-no-return needed coaching; final ordering check mixed → explained, applied not yet clean |
 | Data & state — constraints at the DB boundary (races, enforcement at write) | known (explained+) | 2026-09-03: node 3 taught grounded in store.py guarded writes; race mechanism explained unaided after plain re-teach; invariant (one-step transitions OPEN→CLOSING→COMPLETE) stated with corrections; transferred guarded write to wallet scenario with one correction round. Clean applied grade deferred |
