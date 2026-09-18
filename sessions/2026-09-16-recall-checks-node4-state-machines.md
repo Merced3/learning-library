@@ -11,7 +11,7 @@ Learner returned after a personal break (taxes); explicitly distrusted current-s
 ## Recall check results (13-day delay, harder than the planned ~3-day)
 
 | concept | result | grade |
-|---|---|---|
+| --- | --- | --- |
 | guarded write as race fix | first answer wrong layer again ("fail fast / busy layer" — same mislabel as node 3, self-corrected after scaffold); rebuilt mechanism in own words once scaffolded ("they see a different beginning state") | re-derivable |
 | atomicity (name + concept) | produced both unaided mid-conversation ("group 2 things, both or none — Atomicity?") | recallable, 13 days |
 | rowcount guard detail | not remembered; re-presented (write ≠ check-the-write-landed); learner then generalized unprompted: "a write doesn't check anything — those are 2 different things" | gone → re-presented → re-derivable |
