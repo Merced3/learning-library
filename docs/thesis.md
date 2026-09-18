@@ -49,7 +49,7 @@ The epistemic axis exists because domains rot. "What you know" is only half the 
 Socratic Partner asked: *"What counts as retained if the user can't recall on demand?"* Answer: **unaided recall stays the gate for `known` — no exceptions** (the 0/5 evidence is why). But failure-to-recall splits into states that route different actions:
 
 | state | meaning | agent's next step |
-|---|---|---|
+| --- | --- | --- |
 | `recallable` | produces it cold, after delay | extend interval; move on |
 | `re-derivable` | rebuilds it in seconds once prompted | short-interval retrieval rep (scaffold intact, cheap fix) |
 | `recognizable` | knows it when seen, can't produce it | production practice now; no re-teach |
