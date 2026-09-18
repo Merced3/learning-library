@@ -59,4 +59,6 @@ Everything here is a **hypothesis about one specific mind**, to be confirmed or 
 - Quiz tolerance: do checks feel useful or annoying?
 - What does "up to speed" feel like to you — being able to *do*, or to *converse about*?
 - Do silent prediction pauses in audio actually trigger retrieval attempts for you, or do you tune them out?
+| Manipulated mechanisms stick, names/lookup details evaporate: at 13 days, race mechanism re-derivable and atomicity recalled unaided, but invariant/enforcement names, keyed-receipt, and rowcount detail were gone | observed | 2026-09-16 recall checks; suggests reps should target names+details, not re-teach mechanisms |
+| Distrusts stale state after a break and asks for re-measurement; set standing rule that agent must check the real date when he says "it's been a while" | confirmed | 2026-09-16 session start; rule recorded in session-handoff.md |
 | Audio re-listening produces recognition fluency, which he initially reads as retention ("it will get better the more I listen") — needs the recall-gate reminder at those moments | observed | 2026-09-03 post-sauna/car report; recalled the node-2 lock-in phrase (prior teaching) but attributed improvement to re-listening |

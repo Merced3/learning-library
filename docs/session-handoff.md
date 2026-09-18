@@ -31,6 +31,10 @@ Today's goal: <one sentence>
 5. Record the next delayed-recall check that is owed, and when.
 6. Leave the folder resumable by a different model with zero access to this conversation.
 
+## Date awareness (learner rule, 2026-09-16)
+
+At every session start — and always when the learner says "it's been a while" — get the real current date (run `date`) and compute elapsed time since the last session before trusting `current-state.md`. Delay length changes what recall results mean; record evidence as level + elapsed time.
+
 ## Conventions
 
 - Paragraphs in `maps/`, `sessions/`, and `docs/current-state.md` are stored as single

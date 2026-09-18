@@ -1,6 +1,6 @@
 # Map — Software Development (coarse competency map)
 
-Updated: 2026-08-26
+Updated: 2026-09-16
 Goal: Locate the learner's known/edge/unknown across the major strands of software
 development, anchored to projects he built (socratic-partner, this learning system).
 
@@ -11,7 +11,7 @@ Status: `known` | `edge` | `unknown` | `blocked`. Evidence levels per AGENTS.md.
 
 | strand | status | evidence |
 |---|---|---|
-| Data & state — state machines (why CLOSING exists) / crash windows | known (applied) | 2026-08-31: named time-gap mechanism, located window at send step, explained why retry fails — all unaided |
+| Data & state — state machines (why CLOSING exists) / crash windows | known (explained) | 2026-09-16: node 4 taught — middle-state-as-crash-witness lock-in passed applied-level unaided ("OPEN too general to pick the failure mode"); pizza transfer with one sharpening. Crash-window recall fading: recognizable-only at 13 days, 2nd re-presentation 2026-09-16 |
 | Data & state — transactions / atomicity | known (explained) | 2026-09-01: explained all-or-nothing/rollback + "unit, harmless not smaller" framing after lock-in (initial answer correct but self-flagged as guess); boundary selection correct unaided (money writes in, Discord out); placement before/after point-of-no-return needed coaching; final ordering check mixed → explained, applied not yet clean |
 | Data & state — constraints at the DB boundary (races, enforcement at write) | known (explained+) | 2026-09-03: node 3 taught grounded in store.py guarded writes; race mechanism explained unaided after plain re-teach; invariant (one-step transitions OPEN→CLOSING→COMPLETE) stated with corrections; transferred guarded write to wallet scenario with one correction round. Clean applied grade deferred |
 | Failure & reliability — transient vs permanent failure classification | known | R2-Q3: derived retry-only-what-time-can-fix policy unaided |
@@ -51,6 +51,7 @@ Status: `known` | `edge` | `unknown` | `blocked`. Evidence levels per AGENTS.md.
 - REGRADE R4-Q3 — learner clarified "fake" meant temp-instance-not-live-DB (correct); strand row updated, status stays edge (determinism axis still unaddressed)
 - 2026-08-31 RECALL CHECK (5 presented-only concepts, ~5 day delay): 0/5 recalled unaided; crash window partial-shape only; atomicity / least privilege / mocks-assumptions gone; thundering herd confused with fail-fast. All five re-presented → edge nodes; see sessions/2026-08-31-node1-crash-windows.md
 - 2026-09-03 NODE 3 (races/write-boundary enforcement) taught; see sessions/2026-09-03-node3-races-write-boundary.md. Race in check-then-act gap located after wrong-layer first answer (self-flagged); guarded-write fix (check+act collapsed, DB serializes) grasped unaided; rowcount guard = loser is told it lost. Names taught: race condition / invariant / enforcement at write boundary. Recall checks: node 1 crash window recalled unaided; idempotency recalled unaided (first re-presentation→delayed-recall success); keyed-usage-record trick re-derivable only.
+- 2026-09-16 RECALL CHECKS (13-day delay) + NODE 4 taught; see sessions/2026-09-16-recall-checks-node4-state-machines.md. Atomicity recalled unaided at 13 days; guarded-write re-derivable; rowcount/invariant-names/keyed-receipt gone → re-presented; crash window recognizable-only (2nd fade). Node 4: state machine = states + allowed transitions + guarded writes; witness reasoning transferred to pizza domain.
 - 2026-09-01 NODE 2 (transactions/atomicity) taught; see sessions/2026-09-01-node2-transactions.md. Lock-in 1 (rollback shows neither write) correct but guess-flagged, mechanism then explained unaided; credits design: boundary correct, placement before/after unresolved ("I really don't know") → taught charge-before-point-of-no-return + keyed retry; ordering check: archive gap mislabeled unrecoverable (it is retry-safe), Discord-send gap correctly flagged unknown-delivery. Idempotency failed 1-day unaided recall. Repo-verified: real socratic-partner code already uses transaction boundaries + CLOSING/reopen reset + guarded writes (`WHERE status='OPEN'`). Same-day applied re-test: damage modes per boundary correct (applied-level), envelope scope wrong, retry walk double-charged; proof chain not unaided before fatigue → grade stays `explained`; fresh proof re-run owed next session.
 
 ## Notes

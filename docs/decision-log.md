@@ -184,3 +184,15 @@ own words — logged as a teachable moment, not evidence of retention. (e) Forma
 refined: audio = re-presentation layer, not teaching or retention layer. True recall
 verdict still owed at the 2026-09-06 checks; the no-real-pauses flaw means the
 dialogue+pauses hypothesis was NOT cleanly tested this round.
+
+---
+
+## 2026-09-16 — 13-day recall checks + node 4 taught (state machines) (model: moonshotai/kimi-k3)
+
+Hypothesis: (a) the ~3-day recall checks, accidentally run at 13 days after a learner break, would show what actually survives a real-world gap; (b) node 4 (state machines) could be taught to explained in one session anchored on the learner's own OPEN→CLOSING→COMPLETE rail.
+
+Intervention: Ran all four owed checks unaided first (graded honestly, re-presented failures), then probed node 4 ("why does CLOSING exist?") and taught middle-state-as-crash-witness in two step-locked steps with a pizza-domain transfer check. Also adopted the learner's standing rule: agent checks the real date and computes elapsed time whenever he says "it's been a while" (recorded in session-handoff.md).
+
+Evidence: (a) Split result — manipulated mechanisms survived (atomicity recalled unaided at 13 days; guarded-write race fix re-derivable from one scaffold); names and lookup details did not (invariant/enforcement names, keyed-receipt trick, rowcount detail all `gone`; crash window recognizable-only, same fade pattern as 2026-08-31 — second identical fade). Wrong-layer "fail fast" reflex re-appeared under cold recall but self-corrected with one scaffold (previously needed full re-teach). (b) Node 4 graded known (explained): lock-in passed applied-level unaided ("OPEN is too general to tell you which failure mode to run"); pizza transfer with one sharpening.
+
+Verdict: keep. Retrieval reps should target names + lookup details (the fading layer), not re-teach mechanisms. Crash window gets a short-interval rep and a natural re-appearance inside node 5. Owed ~2026-09-19: rowcount guard, invariant/enforcement names, keyed-receipt trick, crash-window specifics.
