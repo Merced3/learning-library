@@ -47,6 +47,9 @@ Everything here is a **hypothesis about one specific mind**, to be confirmed or 
 
 | Manipulated mechanisms stick, names/lookup details evaporate: at 13 days, race mechanism re-derivable and atomicity recalled unaided, but invariant/enforcement names, keyed-receipt, and rowcount detail were gone | observed | 2026-09-16 recall checks; suggests reps should target names+details, not re-teach mechanisms |
 | Distrusts stale state after a break and asks for re-measurement; set standing rule that agent must check the real date when he says "it's been a while" | confirmed | 2026-09-16 session start; rule recorded in session-handoff.md |
+| Self-correction habit now operates on NEW material, not just recall: talked himself out of his own Discord-receipt proposal mid-answer, deriving the unweldable-outside-world insight unaided | observed | 2026-09-18 node-5 lock-in ("OHHH wait... nvm my b") |
+| Over-reaches for one-shot complete answers under load, then self-trims when reminded to answer only the question asked | observed | 2026-09-18 node-5 ("Im trying to one shot the whole Entire process") |
+| When a name's meaning is fuzzy, re-anchors on the machinery instead of the word (enforcement → WHERE+rowcount) | observed | 2026-09-18 recall checks; names still need targeted production reps |
 
 ## Preferences to respect now
 

@@ -196,3 +196,15 @@ Intervention: Ran all four owed checks unaided first (graded honestly, re-presen
 Evidence: (a) Split result — manipulated mechanisms survived (atomicity recalled unaided at 13 days; guarded-write race fix re-derivable from one scaffold); names and lookup details did not (invariant/enforcement names, keyed-receipt trick, rowcount detail all `gone`; crash window recognizable-only, same fade pattern as 2026-08-31 — second identical fade). Wrong-layer "fail fast" reflex re-appeared under cold recall but self-corrected with one scaffold (previously needed full re-teach). (b) Node 4 graded known (explained): lock-in passed applied-level unaided ("OPEN is too general to tell you which failure mode to run"); pizza transfer with one sharpening.
 
 Verdict: keep. Retrieval reps should target names + lookup details (the fading layer), not re-teach mechanisms. Crash window gets a short-interval rep and a natural re-appearance inside node 5. Owed ~2026-09-19: rowcount guard, invariant/enforcement names, keyed-receipt trick, crash-window specifics.
+
+---
+
+## 2026-09-18 — 2-day recall checks + node 5 taught (idempotency); deep-dive complete (model: moonshotai/kimi-k3)
+
+Hypothesis: (a) the ~3-day checks (run at 2 days) would show whether the 2026-09-16 re-presentations converted `gone` → `recallable`; (b) node 5 could be taught to explained anchored on the learner's own recalled idempotency definition, with crash-window specifics folded in.
+
+Intervention: Ran all four owed checks unaided first (graded honestly, re-presented failures). Then probed node 5 ("is /done idempotent? what makes a step re-runnable?"), taught the dividing line (naturally-repeatable vs receipt vs neither), and ran a Stripe-webhook transfer.
+
+Evidence: (a) Split again — rowcount guard and invariant recalled unaided at 2 days; enforcement name re-derivable; keyed-receipt trick faded a SECOND time (wrong lookup target: conversation state instead of receipt); crash window partial (project-specific framing, general form needed re-statement). Idempotency definition recalled unaided for the 3rd consecutive session. (b) Node 5 graded known (explained): learner derived the unweldable-outside-world insight UNAIDED (talked himself out of his own Discord-receipt proposal mid-answer); locked idempotent-vs-retry-safe as distinct names; Stripe transfer needed two plain-it-down rounds then succeeded, including the atomic grant+receipt reasoning and (sharpened) both mirror crash gaps.
+
+Verdict: keep. Deep-dive "State, invariants, and crashes" COMPLETE 5/5. Keyed receipt has faded twice verbally → next rep switches form to PRODUCTION (write the handler pseudocode cold) per the evidence that manipulated mechanisms stick. Owed ~2026-09-21: keyed-receipt production rep, invariant/enforcement names, idempotent-vs-retry-safe, crash-window general form, plus one no-scaffold node-5 transfer for the applied grade. Open learner decision: next deep-dive vs consolidation project.
